@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+## Project 6 Web Page for David Foster
 
-You can use the [editor on GitHub](https://github.com/dfos1/435-proj6/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This is the web page for project 6, to show off the Seam Carving program.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Picture of Me
+Here is a picture of myself, David Foster
+![Image](https://cdn.discordapp.com/attachments/268691482716667916/784624302267039774/20201204_223614.jpg)
+## Good Case
+When ran on a simple image like a barn on a background of sky, the program was very easily able to carve seams from that part, leaving the barn itself intact. You can see these results below.
+This is the original image 500 pixels wide and 332 pixels tall.
+![Image](https://cdn.discordapp.com/attachments/749355731253198868/784627447915610112/barn500.jpg)
+This is the new image 322 pixels wide and tall.
+![Image](https://cdn.discordapp.com/attachments/749355731253198868/784627446401466378/barn332.jpg)
+There are almost no visible artifacts.
 
-### Markdown
+## Bad Case
+When ran on an image featuring human faces, any distortion is immediately recognizeable. Here is several images featuring a crop of the famous Judith Beheading Holofernes oil panting by Caravaggio.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+This is the original image, 478 by 478
+![Image](https://cdn.discordapp.com/attachments/749355731253198868/784628054621552650/j478.png)
 
-```markdown
-Syntax highlighted code block
+This is the image reduced to 400 by 400. As you can see almost all of the detail remains intact, wit hsome black space culled by the algorithm.
+![Image](https://cdn.discordapp.com/attachments/749355731253198868/784628059348140072/j400.png)
 
-# Header 1
-## Header 2
-### Header 3
+This is the image carved down to 300 by 300. Artifacts have become visible in the woman's face, yet the face to the right still seems fine.
+![Image](https://cdn.discordapp.com/attachments/749355731253198868/784628057628868648/j300.png)
 
-- Bulleted
-- List
+The image is now shrunk to a tiny 200 x 200 and both faces are heavily artifacted. Poor guys
+![Image](https://cdn.discordapp.com/attachments/749355731253198868/784628056379359279/j200.png)
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dfos1/435-proj6/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+And just for fun here is the image shrunk down to a miniscule 50 x 50. It is completely unrecognizeable as the original.
+![Image](https://cdn.discordapp.com/attachments/749355731253198868/784628054650781696/j50.png)
